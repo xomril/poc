@@ -1,9 +1,14 @@
 {
   "name": "CoRi Chrome Extension",
   "description": "Cori Chrom Extension",
-  "version": "1.0",
+  "version": "0.0.1",
   "manifest_version": 2,
-  "web_accessible_resources": ["index.html"],
+  "web_accessible_resources": [
+    "index.html",
+    "images/openPanel.png",
+    "images/Cori.png",
+    "images/closePanel.png"
+  ],
   "content_scripts": [
     {
       "matches": [

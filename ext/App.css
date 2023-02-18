@@ -1,16 +1,175 @@
+* {
+  font-family:Arial, Helvetica, sans-serif;
+  color: #899599;
+  font-size:0.99em;
+}
+
+.Polaris-Button--primary  {
+  --pc-button-color-active: #3c42ec;
+  --pc-button-color: #3c42ec;
+}
+.Polaris-Button--primary .Polaris-Button__Text {
+  color: #fff;
+}
+
 .App {
   text-align: center;
 }
+.header {
+  background-color: #1d2e60;
+  height: 80px;
+  background-image: url('/images/Cori.png');
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 25px;
+}
+.selected {
+  width: 80%;
+  margin-left:30px;
+  background-color: #98c3f8;
+  height: 5px;
+}
+.not_selected {
+  background-color: none;
+  height: 5px;
+}
+.wrapper {
+  height: 65px;
+  display: table; 
+  overflow: h30dden;
+  position: relative;
+}
 
+.Polaris-Layout__Section--oneThird {
+  position: relative;
+  
+}
+.addTask {
+  text-align: right;
+  margin-right: -3px;
+}
+
+.TopBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+ 
+.topCard {
+  flex: 30.33%;
+  right: 0px;
+  top: 0xp;
+  background-color: #3c42ec;
+  margin: 20px;
+}
+
+.rightSide {
+  margin-right: 0;
+ }
+ 
+ .leftSide {
+  margin-left: 0;
+ }
+.toolbar > .Polaris-Stack, .Polaris-Stack--noWrap {
+  --pc-stack-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.headerSection {
+  color: #98c3f8;
+  display: table-cell; 
+  vertical-align: middle;
+  width: 130px;
+  padding-left: 30px;
+  
+}
+.topCard {
+  width: 330px;
+  height: 90px;
+  border-radius: 5%;
+  background-color: #eaeef4;
+  position: relative;
+  
+}
+.topCard .title {
+  top: 10px;
+  position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.topCard .cardValue {
+  position: absolute;
+  width:70px;
+  height: 30px;
+  background-color: #ced3dc;
+  top: 65%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.Polaris-Tabs__Tab--selected .Polaris-Tabs__Title:before {
+  background-color: #0e35ff;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.backgroundRed {
+  background-color: red;
+}
+
+.backgroundOrange {
+  background-color: orange;
+}
+.Polaris-Inline {
+  position: relative;
+}
+.CardLogo {
+  position: absolute;
+  width:100px;
+  border-right: 2px solid #ecebeb;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sentimentCard {
+  height: 80px;
+  border: solid 1px red;
+  position:absolute;
+  left: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.space {
+  width: 20px;
+}
+.inlineLogo {
+  height: 30px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.ActionDetail {
+  padding-top: 12px;
+  position:relative;
+  left: 100px;
+  height: 80px;
+  padding-right: 10px;
+  border-right: 2px solid #ecebeb;
+
 }
 
 .App-header {
@@ -22,6 +181,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.ControlCards {
+  position: relative;
+  padding: 0;
+}
+.leftPanel {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 172px;
+  width:6px;
 }
 
 .App-link {
@@ -36,3 +205,5 @@
     transform: rotate(360deg);
   }
 }
+
+

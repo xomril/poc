@@ -1,5 +1,47 @@
+html {
+  /* Load system fonts */
+  font-family: -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI,
+    Roboto, Helvetica Neue, sans-serif;
+
+  /* Make type rendering look crisper */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Deactivate auto-enlargement of small text in Safari */
+  text-size-adjust: 100%;
+
+  /* Enable kerning and optional ligatures */
+  text-rendering: optimizeLegibility;
+}
+
+/**
+ * Form elements render using OS defaults,
+ * so font-family inheritance must be specifically declared
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 .App {
   text-align: center;
+}
+
+.topBar {
+  padding: 20px;
+}
+
+.leftSide {
+  position: absolute;
+  left: 10px;
+}
+
+.rightSide {
+  position: absolute;
+  right: 10px;
 }
 
 .App-logo {
@@ -7,10 +49,64 @@
   pointer-events: none;
 }
 
+.Polaris-TextField {
+  width: 150px;
+}
+
+.openPanel {
+  /* Rectangle 5 */
+
+  position: absolute;
+  width: 29px;
+  height: 30px;
+  left: 1251px;
+  top: 87px;
+
+  background: #1C2F60;
+  opacity: 0.8;
+  box-shadow: 0px 2px 4px 2px rgba(22, 13, 63, 0.2);
+  border-radius: 100px 0px 0px 100px;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.header {
+  background-color: #1d2e60;
+  height: 60px;
+  background-image: url('./images/Cori.png');
+  background-repeat: no-repeat;
+  background-position-x: 5px;
+  background-position-y: 10px;
+  position: relative;
+}
+
+.header a .Polaris-Icon__Svg {
+  position: absolute;
+  fill: #ffc96b;
+  left: 100px;
+  top: 22px;
+  height: 20px;
+}
+
+.linkOpenExternalIcon {
+  position: absolute;
+  top: 22px;
+  left: 100px;
+}
+
+.rightEnd {
+  right: -80px;
+}
+
+.headr .imgLogo {
+  position: absolute;
+  left: 40px;
+  top: 10px;
 }
 
 .App-header {
@@ -32,7 +128,135 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.backgroundRed {
+  background-color: red;
+}
+
+.backgroundOrange {
+  background-color: orange;
+}
+
+.Polaris-Inline {
+  position: relative;
+}
+
+.CardLogo {
+  position: absolute;
+  width: 100px;
+  border-right: 2px solid #ecebeb;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sentimentCard {
+  height: 80px;
+  border: solid 1px red;
+  position: absolute;
+  left: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.space {
+  width: 20px;
+}
+
+.inlineLogo {
+  height: 30px;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.mainConetnt {
+  position: absolute;
+  top: 100px;
+  width: 500px;
+}
+
+.ControlCards {
+  position: relative;
+  padding: 0;
+  height: 172px;
+}
+
+.innerCard {
+  text-align: left;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 480px
+}
+
+.innerCard h1.critical {
+  color: #F90E00
+}
+
+.innerCard h1,
+.innerCard h2 {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.innerCard .innerText {
+  font-weight: 400;
+  color: #3F3A57;
+}
+
+.leftPanel {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 172px;
+  width: 6px;
+}
+
+.dueDate {
+  color: #68657a;
+  font-style: normal;
+  position: absolute;
+  top: 95px;
+  width: 200px;
+}
+.red {
+  color: rgb(255, 0, 0)
+}
+
+.actionButtons {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  width: 130px;
+}
+
+.Polaris-Button--primary {
+  --pc-button-color: #3a5aff;
+  --pc-button-text: var(--p-text-on-primary);
+  --pc-button-color-hover: #4c69f9;
+  --pc-button-color-active: #3a5aff;
+  --pc-button-color-depressed: #0a32fc;
 }
