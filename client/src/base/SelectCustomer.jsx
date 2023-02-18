@@ -17,7 +17,7 @@ const SelectCustomer = () => {
   );
 
   return (
-    <div style={{height: '275px'}}>
+    <div>
       <Popover
         active={popoverActive}
         activator={activator}

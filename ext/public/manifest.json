@@ -1,0 +1,31 @@
+{
+  "name": "CoRi Chrome Extension",
+  "description": "Cori Chrom Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "web_accessible_resources": ["index.html"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://xomril.github.io/poc/"
+      ],
+      "js": [
+        "runner.js"
+      ],
+      "run_at": "document_end"
+    },
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "background.js"
+      ],
+      "all_frames": true
+    }
+  ],
+  
+  "permissions": [
+    "<all_urls>"
+  ]
+}

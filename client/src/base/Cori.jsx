@@ -6,31 +6,29 @@ import SelectPlayBook from "./SelectPlayBook"
 import SelectPriority from "./SelectPriority";
 import SelectDueDate from "./SelectDueDate";
 import SortBy from "./SortBy";
+import ControlRoom from "./ControlRoom";
 const Cori = () => {
   return (
     <Page fullWidth>
       <Layout>
         <Layout.Section>
-          <Layout>
-            <Layout.Section oneThird>
-              <div className="topCard">
-                <div className="title">TO DO</div>
-                <div className="cardValue"></div>
-              </div>
-            </Layout.Section>
-            <Layout.Section oneThird>
-              <div className="topCard">
-                <div className="title">COMLETED</div>
-                <div className="cardValue"></div>
-              </div>
-            </Layout.Section>
-            <Layout.Section oneThird>
-              <div className="topCard rightSide">
-                <div className="title">MY RANKING</div>
-                <div className="cardValue"></div>
-              </div>
-            </Layout.Section>
-          </Layout>
+          <div className="TopBar">
+            
+            <div className="topCard leftSide">
+              <div className="title">TO DO</div>
+              <div className="cardValue"></div>
+            </div>
+         
+            <div className="topCard center">
+              <div className="title">COMLETED</div>
+              <div className="cardValue"></div>
+            </div>
+         
+            <div className="topCard rightSide">
+              <div className="title">MY RANKING</div>
+              <div className="cardValue"></div>
+            </div>
+            </div>
         </Layout.Section>
 
         <Layout.Section>
@@ -55,8 +53,8 @@ const Cori = () => {
                 </Layout.Section>
                 
               <Layout.Section oneThird>
-                <div style={{ textAlign: "right"}}>
-                <Button primary style={{ backgroundColor: "#3c42ec", color: "#fff"}}>Add Task +</Button>;
+                <div className="addTask">
+                <Button primary>Add Task +</Button>;
                 </div>
                 
                 </Layout.Section>
@@ -64,9 +62,7 @@ const Cori = () => {
               
             </Layout.Section>
             <Layout.Section>
-              <Card title="Online store dashboard" sectioned>
-                <p>View a summary of your online store’s performance.</p>
-              </Card>
+              <ControlRoom/>
             </Layout.Section>
           </Layout>
         </Layout.Section>

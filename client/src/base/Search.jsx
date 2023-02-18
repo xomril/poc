@@ -61,7 +61,7 @@ const Search = () => {
   );
 
   return (
-    <div style={{height: '225px'}}>
+    <div>
       <Autocomplete
         options={options}
         selected={selectedOptions}

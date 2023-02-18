@@ -36,35 +36,53 @@
 .wrapper {
   height: 65px;
   display: table; 
-  overflow: hidden;
+  overflow: h30dden;
   position: relative;
 }
 
 .Polaris-Layout__Section--oneThird {
   position: relative;
-  background-color: #c0c0c0;
+  
+}
+.addTask {
+  text-align: right;
+  margin-right: -3px;
 }
 .headerSection .Polaris-Icon {
   position: absolute;
   top: 25px;
   left: 8px;
+  height: 15px;
   
 }
-.topCard .rightSide {
-  border: solid 1px black;
+.TopBar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+ 
+.topCard {
+  flex: 30.33%;
   right: 0px;
   top: 0xp;
   background-color: #3c42ec;
+  margin: 20px;
 }
 
+.rightSide {
+  margin-right: 0;
+ }
+ 
+ .leftSide {
+  margin-left: 0;
+ }
 .toolbar > .Polaris-Stack, .Polaris-Stack--noWrap {
   --pc-stack-spacing: 0;
   margin: 0;
   padding: 0;
 }
-.Polaris-Icon svg {
-  height: 15px;
-}
+
 .headerSection {
   color: #98c3f8;
   display: table-cell; 
@@ -102,11 +120,62 @@
   height: 40vmin;
   pointer-events: none;
 }
+.Polaris-Tabs__Tab--selected .Polaris-Tabs__Title:before {
+  background-color: #0e35ff;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.backgroundRed {
+  background-color: red;
+}
+
+.backgroundOrange {
+  background-color: orange;
+}
+.Polaris-Inline {
+  position: relative;
+}
+.CardLogo {
+  position: absolute;
+  width:100px;
+  border-right: 2px solid #ecebeb;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sentimentCard {
+  height: 80px;
+  border: solid 1px red;
+  position:absolute;
+  left: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.space {
+  width: 20px;
+}
+.inlineLogo {
+  height: 30px;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.ActionDetail {
+  padding-top: 12px;
+  position:relative;
+  left: 100px;
+  height: 80px;
+  padding-right: 10px;
+  border-right: 2px solid #ecebeb;
+
 }
 
 .App-header {
@@ -118,6 +187,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.ControlCards {
+  position: relative;
+  padding: 0;
+}
+.leftPanel {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 80px;
+  width:6px;
 }
 
 .App-link {
@@ -131,4 +210,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+iframe {
+  display: none;
 }

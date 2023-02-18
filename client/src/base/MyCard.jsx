@@ -108,7 +108,7 @@ const MyCard = (props) => {
   );
 
   return (
-    <div style={{height: '250px'}}>
+    <div>
       <Frame topBar={topBarMarkup} logo={logo} />
     </div>
   );
