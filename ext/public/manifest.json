@@ -1,36 +1,31 @@
 {
-  "name": "CoRi Chrome Extension",
-  "description": "Cori Chrom Extension",
+  "name": "CoRi - chrome extension",
   "version": "0.0.1",
-  "manifest_version": 2,
-  "web_accessible_resources": [
-    "index.html",
-    "images/openPanel.png",
-    "images/Cori.png",
-    "images/closePanel.png"
-  ],
+  "manifest_version": 3,
+  "action": {},
   "content_scripts": [
     {
       "matches": [
-        "https://xomril.github.io/poc/"
+        "https://xomril.github.io/poc/*"
       ],
+      "all_frames": true,
       "js": [
         "runner.js"
-      ],
-      "run_at": "document_end"
-    },
-    {
-      "matches": [
-        "<all_urls>"
-      ],
-      "js": [
-        "background.js"
-      ],
-      "all_frames": true
+      ]
     }
   ],
-  
-  "permissions": [
-    "<all_urls>"
-  ]
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "index.html",
+        "images/openPanel.png",
+        "images/Cori.png",
+        "images/closePanel.png"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "key": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCnCTnUK8jgYTxnQLdtE6QzkZgn3rZv0U1naCx4csdSDqYEBXgW2pR2m/uUIAU1HzAUfkDckqTezyIG1bPw8l5X8FyWfgMQANFgTPXGRNXTmDSqHcqvS7zvuEr0xF12oGLBKa7cdEsaQzdfDWsm5BlwFIPfPXUokaHEGvxPBjrXHQmx+Z4xAyhzNh+v5bFr63lsL0ysS8z4KVKc1G1lcUZnp7Oz9n0pZP9QW0Oei2KCumDqGpqVd249232a0E9TUeQ+lqAxiN4ybzBgUT5al7Yh1nIhGHxPyRnihtHmx+hxupCuhzXeaoKjWiADp+FEK/aPAzvP5ynLDQHelez/eGdF"
 }

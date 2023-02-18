@@ -66,7 +66,7 @@ function enableAutoHideOnScroll(s,f,fb){
 function addScriptToHead(url) {
 	const script = document.createElement('script');
 	script.id = url;
-	script.src = chrome.extension.getURL(url);
+	script.src = chrome.runtime.getURL(url);
 	document.head.appendChild(script);
 }
 var erudaS=false;
