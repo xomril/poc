@@ -1,0 +1,57 @@
+{
+    "_id": "9a3f41c0-457e-45d2-a508-ffeb4dc82604", 
+    "tenantId": "63c423adca72b299a77758be",
+    "createDate": "2023-02-14T16:27:07.026Z",
+    "dueDate": "2023-02-17T16:27:07.026Z",
+    "customer": { 
+        "id": "e4c445b9-a28a-4061-83b2-0193edf94571",
+        "name": "RapidTech",
+        "logo": "https://www.pngfind.com/pngs/m/665-6659827_enterprise-comments-default-company-logo-png-transparent-png.png",
+        "sentiment": "good",
+        "ARR": 246204 
+    },
+    "playbook": {
+        "id": "f3f33fce-1a73-4a0d-9561-5dcec6b864e9",
+        "name": "Open ticket high level escalation", 
+        "stepId": "4f792b83-1109-43ac-a636-487610bab9a9",
+        "stepName": "Work on tickets started Inform CS OPS by Email",
+        "stepOnComplete": "ON_CONTROL_ROOM_APPROVAL"
+    },
+    "reason": "Activated by playbook step", 
+    "priority": 80, 
+    "userId": "cde0cd17-2bec-45eb-a3d9-deec7306396e",
+    "actionParams": { 
+        "definitionId": "f6e26943-648f-430b-a726-d8eba3de883b",
+        "type": "SEND_EMAIL",
+        "executionType": "SEND_TO_USER_CONTROL_ROOM",
+        "subject": "We are working on your support tickets",
+        "content": "Hi! Our team is working on your support tickets and we will be able to provide you a complete status by end of day tomorrow",
+        "recipient": [
+            {
+                "name": "Terrance Fuller",
+                "email": "terrance.fuller@quicksolve.com"
+            }
+        ],
+        "cc": [
+            {
+                "name": "Isabella Silva",
+                "email": "isabella.silva@quicksolve.com"
+            }
+        ],
+        "from": {
+            "_id": "cde0cd17-2bec-45eb-a3d9-deec7306396e",
+            "name": "Misha Kopaniov",
+            "email": "misha@nimble.com"
+        }
+    },
+    "activeStepId": "810dc2f0-6a2c-4367-9eb2-34316f78809d",
+    "operations": { 
+        "executeAutomatically": true,
+        "executeManually": true,
+        "decline": true,
+        "snooze": true
+    },
+    "snoozedUntilDate": null, 
+    "completeDate": "2023-02-14T16:22:29.860Z", 
+    "completeOperation": "DECLINED_BY_USER"
+}

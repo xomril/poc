@@ -2,11 +2,16 @@ const express = require('express');
 const router = express.Router();
 const dotenv = require('dotenv');
 const jwt = require('jsonwebtoken');
+const actions = require('../jsons/actions.json')
 // get config vars
 dotenv.config();
 
 // access config var
 process.env.TOKEN_SECRET;
+
+router.get('/control-room/actions', (req, res)  => {
+    res.send(actions)
+})
 
 router.get('/', async (req, res) => {
     res.send('hello world')
