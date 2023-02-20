@@ -15,10 +15,13 @@ button1.addEventListener("click", switchFrame);
 
 const button2 = document.createElement("img");
 button2.src = chrome.runtime.getURL("images/closePanel.png")
-button2.setAttribute("style", "display:none;position: absolute; top:10px;right:0px;");
+button2.setAttribute("style", "display:none;position: absolute; top:44px;right:0px;");
 button2.addEventListener("click", switchFrame);
 
-
+const button3 = document.createElement("img");
+button3.src = chrome.runtime.getURL("openLink.png")
+button3.setAttribute("style", "position: absolute; top:52px;left:250px;cursor:hand");
+button3.addEventListener("click", openNeedle);
 
 
 const div1 = document.createElement("div");
@@ -26,15 +29,18 @@ div1.setAttribute("style", "transition: all .5s linear;position: absolute; top:-
 document.body.appendChild(div1);
 const header = document.createElement("div");
 const topImg = document.createElement("img");
-topImg.src =  chrome.runtime.getURL('images/Cori.png');
+topImg.src =  chrome.runtime.getURL('topStrip.png');
 topImg.style.display = 'none'
 header.appendChild(topImg);
 div1.appendChild(header)
 div1.appendChild(iframe);
 div1.appendChild(button1);
 div1.appendChild(button2);
+div1.appendChild(button3);
 
-
+function openNeedle() {
+    //
+}
 function switchFrame() {
     console.log('switch clicked')
     if (iframe.style.display === 'none') {

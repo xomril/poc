@@ -1,8 +1,14 @@
 {
-  "name": "CoRi - chrome extension",
+  "name": "Needle - chrome extension",
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {},
+  "icons": {
+      "16": "favicon.png",
+      "48": "favicon48.png",
+      "128": "favicon128.png"
+    },
+  
   "content_scripts": [
     {
       "matches": [
@@ -14,12 +20,16 @@
       ]
     }
   ],
+  "host_permissions": [
+    "http://127.0.0.1:3001/*"
+  ],
   "web_accessible_resources": [
     {
       "resources": [
         "index.html",
         "images/openPanel.png",
-        "images/Cori.png",
+        "topStrip.png",
+        "openLink.png",
         "images/closePanel.png"
       ],
       "matches": [
